@@ -1,5 +1,11 @@
 @import url(https://fonts.bunny.net/css?family=oxanium:300,400,500,600,700,800);
 
+:root{
+    --black: #0f0f0f;
+    --grey: #444;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -37,7 +43,7 @@ body {
     position: absolute;
     font-weight: 600;
     color: #aaa;
-    top: 54.5%;
+    top: 55%;
     right: 27%;
     font-size: clamp(8px,5vw,25px);
 }
@@ -68,7 +74,7 @@ form{
 
 .buttons{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     width: 65%;
     transform: translate(-57%,0);
@@ -79,7 +85,7 @@ form{
 .button{
     width: 50%;
     padding: 4%;
-    border: 2px solid #000;
+    border: 2px solid var(--black);
     border-radius: 5px;
     font-size: clamp(8px,5vw,1rem);
     font-weight: 600;
@@ -91,3 +97,23 @@ form{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+a{
+    width: auto;
+    padding: 10px;
+    background-color:#D30A40;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+a:hover{background-color:#222;}
